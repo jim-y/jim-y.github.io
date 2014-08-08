@@ -1,17 +1,16 @@
 # MARKDOWN Settings
-markdown: kramdown
-kramdown:
-  input: GFM
+markdown: redcarpet
+highlighter: pygments
 
 # Permalinks
 permalink: pretty
 
 # Setup
 title:  Woowie
-tagline: 'Get in touch w/ IT via Woowie'
+tagline: 'get in touch w/ IT via woowie'
 description: 'A technical blog about Linux, programming and stuff'
 url: 'https://github.com/jim-y'
-baseurl: ''
+baseurl: '/'
 paginate: 5
 
 author:
