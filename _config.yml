@@ -1,12 +1,26 @@
-# Site settings
-title: My awesome Woowie blog
-email: jimmyfly10@gmail.com
-description: "Get in touch w/ IT via Woowie. Woowie personal blog"
-baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: attilakling
-github_username:  jim-y
-
-# Build settings
+# MARKDOWN Settings
 markdown: kramdown
+kramdown:
+  input: GFM
+
+# Permalinks
 permalink: pretty
+
+# Setup
+title:  Woowie
+tagline: 'Get in touch w/ IT via Woowie'
+description: 'A technical blog about Linux, programming and stuff'
+url: ''http://lanyon.getpoole.com''
+baseurl: ''
+paginate: 5
+
+author:
+  name: 'Attila Kling'
+  url: https://twitter.com/attilakling
+  email: jimmyfly10@gmail.com
+
+# Custom vars
+version: 0.0.1
+
+github:
+  repo: https://github.com/jim-y/jim-y.github.io
