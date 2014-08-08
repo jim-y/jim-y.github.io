@@ -1,0 +1,12 @@
+# Site settings
+title: My awesome Woowie blog
+email: jimmyfly10@gmail.com
+description: "Get in touch w/ IT via Woowie. Woowie personal blog"
+baseurl: ""
+url: "http://yourdomain.com"
+twitter_username: attilakling
+github_username:  jim-y
+
+# Build settings
+markdown: kramdown
+permalink: pretty
