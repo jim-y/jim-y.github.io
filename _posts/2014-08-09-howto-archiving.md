@@ -6,9 +6,9 @@ categories: [linux]
 tags: [cli, terminal, zip, tar, compress]
 ---
 
-## Archive into tar
+## Archive into tar[![permalink](/assets/permalink.png)]({{page.url}}#archive-into-tar)
 
-Recursive **compression** on directory
+Recursive compression on directory
 
     tar -zcvf dest.tar.gz source/
 
@@ -17,10 +17,14 @@ Recursive **compression** on directory
 * -v verbose
 * -f archive filename
 
-**Decompress** to current directory
+Decompress files to current directory
 
     tar -zxvf source.tar.gz
 
-## Archive into zip
+## Archive into zip[![permalink](/assets/permalink.png)]({{page.url}}#archive-into-zip)
 
-> Tags: {{ page.tags | sort | array_to_sentence_string }}
+Recursive compression of a directory
+
+    zip -r dest source
+
+As an example, dest would be woowie.zip, and source could be woowie/ (dir)

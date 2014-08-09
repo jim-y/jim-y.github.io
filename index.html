@@ -11,7 +11,12 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
-    <span class="post-date">{{ post.date | date_to_string }}<small> - {{ post.categories | array_to_sentence_string }}</small></span>
+    <span class="post-date">
+      {{ post.date | date_to_string }}
+      <small> - {{ post.categories | array_to_sentence_string }} - 
+        <a href="{{ post.url }}#disqus_thread"></a>
+      </small>
+    </span>
 
     {% assign post_len = post.content | number_of_words %}
     
@@ -20,6 +25,12 @@ title: Home
     {% else %}
       {{ post.content }}
     {% endif %}
+    <div class="tags-container">
+      <span class="tags-wrapper">
+        Tags: 
+        <span class="tags">{{ post.tags | sort | array_to_sentence_string }}</span>
+      </span>
+    </div>
   </div>
   {% endfor %}
 </div>

@@ -237,6 +237,23 @@ img {
   border-radius: 5px;
 }
 
+/*
+ * Added by jim-y
+ */
+
+.post img {
+  display: inline;
+  margin: 0 0 .1rem .3rem;
+  opacity: 0.3;
+}
+
+.post img:hover {
+  opacity: 1;
+}
+
+
+/* Just the above */
+
 /* Tables */
 table {
   margin-bottom: 1rem;

@@ -34,7 +34,7 @@ sudo svn import /tmp/repo file:///media/pendrive/svn/repo -m "initial import"
 sudo rm -rf /tmp/repo
 ```
 
-## Settings
+## Settings[![permalink](/assets/permalink.png)]({{page.url}}#settings)
 
 1. edit password file & add users
 2. edit `authz` file (optional)
@@ -77,7 +77,7 @@ authz-db=authz
 realm=My Repository
 ```
 
-## Startup
+## Startup[![permalink](/assets/permalink.png)]({{page.url}}#startup)
 
 ```bash
 $ svnserve -d -r /media/pendrive/svn/
@@ -91,11 +91,11 @@ $ ps auxww | fgrep svnserve
 
 Read more about [svnserve](https://href.li/?http://svnbook.red-bean.com/en/1.6/svn.serverconfig.svnserve.html)
 
-## Configuring the router
+## Configuring the router[![permalink](/assets/permalink.png)]({{page.url}}#configuring-the-router)
 
 SVN is listening on port 3690 on default for every incoming requests over `svn://` protocol. But first we need to portforward every incoming request to the raspberrypi. Mind, that before we already binded 192.168.1.102 to the PI, so on the port forwarding give this inner ip.
 
-## More on SVN
+## More on SVN[![permalink](/assets/permalink.png)]({{page.url}}#more-on-svn)
 
 ```bash
 svn co svn://domain/repo localcopyfolder
