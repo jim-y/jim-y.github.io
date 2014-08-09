@@ -16,7 +16,7 @@ The call() method calls a function with a given `this` value and arguments provi
 
 ```javascript
 // first superclass
-function superClass(name, other) {
+function superClass( name, other ) {
     this.name = name || "superclass1";
     this.other = other || "someproperty1";
 }

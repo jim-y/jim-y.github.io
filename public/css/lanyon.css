@@ -41,12 +41,14 @@ body {
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  /*font-family: "PT Serif", Georgia, "Times New Roman", serif;*/
+  font-family: "Ubuntu", Georgia, Helvetia, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  /*font-family: "PT Sans", Helvetica, Arial, sans-serif;*/
+  font-family: "Ubuntu", Georgia, Helvetia, sans-serif;
+  font-weight: 500;
   color: #313131;
   letter-spacing: -.025rem;
 }
@@ -151,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  /*font-family: "PT Sans", Helvetica, Arial, sans-serif;*/
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
@@ -333,10 +335,6 @@ a.sidebar-nav-item:focus {
   color: #9a9a9a;
 }
 
-.post-date small {
-  font-size: 0.8rem;
-}
-
 /* Related posts */
 .related {
   padding-top: 2rem;
@@ -447,6 +445,17 @@ a.pagination-item:hover {
  * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
  */
 
+/* Jim-Y */
+.theme-base-00 .sidebar,
+.theme-base-00 .sidebar-toggle:active,
+.theme-base-00 #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #ac4142;
+}
+.theme-base-00 .sidebar-toggle {
+  color: #ac4142;
+}
+
+
 /* Red */
 .theme-base-08 .sidebar,
 .theme-base-08 .sidebar-toggle:active,
@@ -454,7 +463,6 @@ a.pagination-item:hover {
   background-color: #ac4142;
 }
 .theme-base-08 .container a,
-.theme-base-08 .tags,
 .theme-base-08 .sidebar-toggle,
 .theme-base-08 .related-posts li a:hover {
   color: #ac4142;
@@ -586,11 +594,10 @@ a.pagination-item:hover {
 }
 
 .tags-container {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .tags {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 0.9em;
+  font-weight: 300;
+  font-size: 0.8em;
 }

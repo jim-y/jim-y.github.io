@@ -23,7 +23,7 @@ I like
 * grill parties
 * being at [Balaton][1] all summer :P
 
-You can find me on [GitHub][2], on [Twitter][3], and on [LinkedIn][4].
+You can find me on [GitHub][2], on [Twitter][3], on [LinkedIn][4], and on [Reddit][5].
 
 ## About the blog
 
@@ -39,3 +39,4 @@ TBC
 [2]: https://github.com/jim-y "GitHub Profile"
 [3]: https://twitter.com/attilakling "Twitter Profile"
 [4]: http://hu.linkedin.com/pub/attila-kling/77/64a/66a/ "LinkedIn Profile"
+[5]: http://www.reddit.com/user/Jim-Y/ "Reddit Profile"

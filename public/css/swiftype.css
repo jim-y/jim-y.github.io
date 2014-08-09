@@ -1,0 +1,6 @@
+body form input.st-search-input {
+  color: #ac4142;
+  font-family: "Ubuntu", Georgia, Helvetia, sans-serif;
+  font-weight: 400;
+  background: #fcfcfc url(//s.swiftypecdn.com/assets/embed_mag-034de95a159bfc65ae00bd318e8138ed.png) no-repeat 7px 2px;
+}

@@ -14,7 +14,7 @@ The linux terminal is a powerful tool what every linux user should learn to use.
 
 Edit `.bashrc` and search for `#force_color_prompt=yes`, uncomment it. Then set color by editing
 
-```bash
+```sh
 if [ "$color_prompt" = yes ]; then
   PS1=’${debian_chroot:+($debian_chroot)}\[33[01;32m\]\u@\h\[33[00m\]:\[\
 ```
