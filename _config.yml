@@ -1,5 +1,7 @@
 # MARKDOWN Settings
 markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 highlighter: pygments
 
 # Permalinks
@@ -13,10 +15,14 @@ url: 'https://github.com/jim-y'
 baseurl: '/'
 paginate: 5
 
+#Personal
 author:
   name: 'Attila Kling'
   url: https://twitter.com/attilakling
   email: jimmyfly10@gmail.com
+
+twitter_username: attilakling
+github_username: jim-y
 
 # Custom vars
 version: 0.0.1

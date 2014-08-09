@@ -11,10 +11,15 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
+    <span class="post-date">{{ post.date | date_to_string }}<small> - {{ post.categories | array_to_sentence_string }}</small></span>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+    {% assign post_len = post.content | number_of_words %}
+    
+    {% if post_len > 300 %}
+      {{ post.excerpt }}
+    {% else %}
+      {{ post.content }}
+    {% endif %}
   </div>
   {% endfor %}
 </div>
