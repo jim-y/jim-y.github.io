@@ -17,21 +17,21 @@ Long posts (> 300 wordcount) should give a "Read more" link in the excerpt
 From repository
 
 ```bash
-sudo apt-get update
-sudo apt-get install subversion
+$ sudo apt-get update
+$ sudo apt-get install subversion
 ```
 
 Optionally create the repository on a flash drive
 
 ```bash
-sudo mkdir /media/pendrive/svn/repo
-sudo mkdir /tmp/repo
-sudo mkdir /tmp/repo/branches
-sudo mkdir /tmp/repo/tags
-sudo mkdir /tmp/repo/trunk
-sudo svnadmin create /media/pendrive/svn/repo
-sudo svn import /tmp/repo file:///media/pendrive/svn/repo -m "initial import"
-sudo rm -rf /tmp/repo
+$ sudo mkdir /media/pendrive/svn/repo
+$ sudo mkdir /tmp/repo
+$ sudo mkdir /tmp/repo/branches
+$ sudo mkdir /tmp/repo/tags
+$ sudo mkdir /tmp/repo/trunk
+$ sudo svnadmin create /media/pendrive/svn/repo
+$ sudo svn import /tmp/repo file:///media/pendrive/svn/repo -m "initial import"
+$ sudo rm -rf /tmp/repo
 ```
 
 ## Settings[![permalink](/assets/permalink.png)]({{page.url}}#settings)
@@ -98,14 +98,56 @@ SVN is listening on port 3690 on default for every incoming requests over `svn:/
 ## More on SVN[![permalink](/assets/permalink.png)]({{page.url}}#more-on-svn)
 
 ```bash
-svn co svn://domain/repo localcopyfolder
-svn update (up)
-svn add
-svn import
-svn remove (rm)
-svn commit
-svn revert
-svn status (st)
-svn log
-svn info
+$ svn co svn://domain/repo localcopyfolder
+$ svn update (up)
+$ svn add
+$ svn import
+$ svn remove (rm)
+$ svn commit
+$ svn revert
+$ svn status (st)
+$ svn log
+$ svn info
 ``` 
+
+## A more easier guide
+
+First install subversion on the server side, and client side aswell.
+    
+    $ sudo apt-get install subversion
+
+Next, on server side, create a directory to hold our repository(ies).
+
+    $ sudo mkdir /web/svn/
+
+Next, create our repo.
+
+    $ svnadmin create /web/svn/repo
+
+Next, set up basic authentication, edit svnserve.conf file and uncomment password-db = passwd line.
+
+    $ sudo nano -Y nanorc /web/svn/repo/conf/svnserve.conf
+
+Next, add some user to the passwd file.
+
+    $ sudo nano -Y nanorc /web/svn/repo/conf/passwd
+
+Next, start the svnserve daemon.
+
+    $ svnserve -d -r /web/svn/
+
+To check if it started properly,
+    
+    $ netstat -tap | grep svn , or
+    $ ps auxww | fgrep svnserve
+
+Next add the svn port to the routers port forwarding table. bind port 3690 to the server machine’s IP.
+Next, checkout the repo on the client machine,
+
+    $ svn co --username svn:///repo LocalFolder
+
+## Tips & Tricks
+
+Counting commits by user
+
+    $ svn log | egrep uname | wc -l

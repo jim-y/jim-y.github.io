@@ -8,7 +8,7 @@ tags: [cli, terminal, debian]
 
 Open up a root terminal, and type 
 
-    visudo
+    $ visudo
 
 search for the section *# User privilege specification* and extend it with our new user
 

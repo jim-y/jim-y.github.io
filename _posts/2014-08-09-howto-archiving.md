@@ -10,7 +10,7 @@ tags: [cli, terminal, zip, tar, compress]
 
 Recursive compression on directory
 
-    tar -zcvf dest.tar.gz source/
+    $ tar -zcvf dest.tar.gz source/
 
 * -z archive to gz
 * -c create
@@ -19,12 +19,12 @@ Recursive compression on directory
 
 Decompress files to current directory
 
-    tar -zxvf source.tar.gz
+    $ tar -zxvf source.tar.gz
 
 ## Archive into zip[![permalink](/assets/permalink.png)]({{page.url}}#archive-into-zip)
 
 Recursive compression of a directory
 
-    zip -r dest source
+    $ zip -r dest source
 
 As an example, dest would be woowie.zip, and source could be woowie/ (dir)

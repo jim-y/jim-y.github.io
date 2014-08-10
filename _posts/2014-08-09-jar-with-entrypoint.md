@@ -9,11 +9,11 @@ tags: [jar, java]
 Create a lightweigt sample project, for simplicity, we only have two files in the project.
 
 ```bash
-mkdir jar_application
-cd jar_application
-touch Main.java
-touch SampleBean.java
-touch Manifest.txt
+$ mkdir jar_application
+$ cd jar_application
+$ touch Main.java
+$ touch SampleBean.java
+$ touch Manifest.txt
 ```
 
 ```text
@@ -67,6 +67,6 @@ public class SampleBean {
 In the manifest file, mind the CR (carriage return, enter, ↵). Next, enter these commands in the terminal.
 
 ```bash
-jar cfm MyJar.jar Manifest.txt *.class
-java -jar MyJar.jar
+$ jar cfm MyJar.jar Manifest.txt *.class
+$ java -jar MyJar.jar
 ```
