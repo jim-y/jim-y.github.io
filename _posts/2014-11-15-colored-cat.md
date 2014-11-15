@@ -1,6 +1,6 @@
 ---
 layout: post
-title: colored cat
+title: Colored `cat`
 published: True
 categories: [linux]
 tags: [terminal,cat,pygments]
@@ -9,7 +9,7 @@ tags: [terminal,cat,pygments]
 The post is based on Paul Irish's video -> [Paul Irish on Web Application Development Workflow](https://www.youtube.com/watch?v=vDbbz-BdyYc)
 Ever wanted a nice colored output of the `cat` command in the terminal? Here it is how you can fulfill your 'dream' :)
 
-# Colored cat
+# Pygmentize cat
 
 Install pygments
 
