@@ -22,3 +22,7 @@ Set an alias in `.bashrc`
 Use it
 
     $ c users.json
+
+Screenshot
+
+![pygmentized_cat](/assets/pygments.png)
