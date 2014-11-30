@@ -160,3 +160,7 @@ board.on('ready', function() {
 ```
 
 I didn't care about the quality of the JS code this time, just tried to make the thing work :)
+
+## Demo
+
+[Youtube link](http://youtu.be/DVll6zFRToU)
