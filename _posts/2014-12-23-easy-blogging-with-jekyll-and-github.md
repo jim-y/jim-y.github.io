@@ -8,8 +8,6 @@ tags: []
 
 In this post I will show you an easy way to express your thoughts via the static site and blog motor `Jekyll`. We will host our blog on `github pages` for **free**! To set up a starter skeleton project only takes a few minutes.
 
-[TOC]
-
 # Preface
 
 My story started ~6 years ago, when I first wanted to do some "blogging". On the early days, I used some really simple, and free blogging motors, like blogspot, and others I can hardly remember their names. Later on I started a blog about my sports life, about my training. It was like a diary of mine on the net around the topic of the gym. It was sufficient for my solely purpose. Then, after a few years I wanted to start a semi-personal blog about technology and stuff. I wanted to archive somewhere my findings about the Unix world, and save some snippets about programming. I started to use Wordpress, but I was overly unsatisfied with it. It was such a pain in the ass to create a new blog post, it was time consuming, and I couldn't insert code snippets properly in it. Also, when I wanted to modify my blog on the slightest level, wordpress made it nearly impossible for me. I wanted something, what is
