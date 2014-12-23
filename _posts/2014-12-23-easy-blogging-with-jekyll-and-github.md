@@ -134,7 +134,7 @@ A Jekyll blog consists of `posts` and `pages`. Posts are .. surprise, surprise .
 
 This is your blog's main config page, where you set up things like `baseurl` and stuff. More about this later.
 
-### ./_posts
+### _posts
 
 The posts older contains your articles. The naming of your posts are very strict and concise.
 
@@ -142,13 +142,13 @@ The posts older contains your articles. The naming of your posts are very strict
 
 Technically speaking, the creating of a new post is as simple as creating a new markup file in the ./_posts folder with the required naming.
 
-### ./_layouts, ./_includes
+### _layouts|includes
 
 `_includes` is the folder for reusable markups/html. Think of it as the place where you put a header.html segment what needs to be appended on every page of your blog.
 
 `_layouts` is the folder for site templates. Usually your posts will have a template, where you will render the content, as well as your pages, and you should have a default template for your main page.
 
-### ./_site
+### _site
 
 `_site` is a folder which is generated programmatically by jekyll. GitHub will create such files which are inside this folder upon build. If you want to host your blog on your own, you will need to serve up these files on a webserver. We will put this folder into `.gitignore`.
 
