@@ -245,7 +245,7 @@ So, modify sidebar.html as follows
 
 The pinpoint here is the Liquid directive `{{ site.author.url }}` and `{{ site.author.name }}`. These values come from the `_config.yml`. Now, let's rewrite
 
-```htlm
+```html
 <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
 ```
 
@@ -257,7 +257,7 @@ that we doesn't get the repo name directly from the config file, instead we will
 
 The site.github namespace will be injected upon gh-build. The final config file looks like:
 
-```yml
+```bash
 # Dependencies - "fenced_code_blocks" is automatically enabled
 markdown: redcarpet
 redcarpet:
@@ -298,7 +298,7 @@ Let's create a new post.
 5. A new post appeared in the directory you already set up when you installed the jekyll plugin in sublime. It should be your blog's `_posts` directory.
 6. The front-matter section is prefilled for you, as shown below.
 
-```markdown
+```json
 ---
 layout: post
 title: Welcome post
