@@ -1,6 +1,6 @@
 ---
 layout: post
-title: easy blogging with jekyll and github
+title: Easy blogging with jekyll and github
 published: True
 categories: []
 tags: []
