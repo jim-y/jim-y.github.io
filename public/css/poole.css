@@ -245,11 +245,6 @@ img {
 .post img {
   display: inline;
   margin: 0 0 .1rem .3rem;
-  opacity: 0.3;
-}
-
-.post img:hover {
-  opacity: 1;
 }
 
 
