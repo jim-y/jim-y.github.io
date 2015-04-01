@@ -1,9 +1,9 @@
 ---
-layout: 
+layout: post
 title: svn revert
 categories: [linux]
 tags: [svn,subversion,revert]
-published: True
+published: true
 
 ---
 

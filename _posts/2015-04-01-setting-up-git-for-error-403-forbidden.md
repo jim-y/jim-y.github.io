@@ -1,9 +1,9 @@
 ---
-layout: 
+layout: post
 title: Setting up git for Error 403 Forbidden
 categories: [linux]
 tags: [git,error,forbidden]
-published: True
+published: true
 ---
 
 ```bash
